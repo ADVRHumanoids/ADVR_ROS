@@ -42,9 +42,6 @@ include(MacroYCMInstallLibrary)
 # find first YCM in order to have ${YCM_MODULE_PATH} defined for 3rd party software like Eigen3
 find_package(YCM REQUIRED)
 
-# trajectory_utils
-# find_package(trajectory_utils REQUIRED)
-
 # ROS
 find_package(catkin QUIET COMPONENTS roscpp 
                                      sensor_msgs 
