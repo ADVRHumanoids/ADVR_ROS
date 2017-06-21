@@ -74,6 +74,12 @@ if( ${catkin_FOUND} )
     advr_segment_control.srv
     )
 
+    add_service_files(
+    DIRECTORY srv
+    FILES
+    im_pose.srv
+    )
+
     generate_messages(
     DEPENDENCIES
     std_msgs
