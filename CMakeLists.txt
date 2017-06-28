@@ -72,11 +72,17 @@ if( ${catkin_FOUND} )
     FILES
     advr_segment_control.srv
     )
-
+    
     add_service_files(
     DIRECTORY srv
     FILES
     im_pose.srv
+    )
+
+    add_service_files(
+    DIRECTORY srv
+    FILES
+    advr_grasp_control.srv
     )
 
     generate_messages(
