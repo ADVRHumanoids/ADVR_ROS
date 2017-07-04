@@ -1,3 +1,5 @@
-string grasp_obj
+string model
+string link
+bool grasp
 ---
 bool success
