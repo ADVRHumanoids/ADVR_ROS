@@ -82,6 +82,12 @@ if( ${catkin_FOUND} )
     add_service_files(
     DIRECTORY srv
     FILES
+    im_pose_array.srv
+    )
+    
+    add_service_files(
+    DIRECTORY srv
+    FILES
     advr_grasp_control.srv
     )
 
