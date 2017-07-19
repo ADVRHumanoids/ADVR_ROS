@@ -1,0 +1,2 @@
+string name
+ADVR_ROS/im_pose_msg[] im_poses

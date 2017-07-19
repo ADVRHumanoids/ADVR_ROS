@@ -91,6 +91,13 @@ if( ${catkin_FOUND} )
     advr_grasp_control.srv
     )
 
+    add_message_files(
+    DIRECTORY msgs
+    FILES
+    im_pose_msg.msg
+    im_pose_array_msg.msg
+    )
+    
     generate_messages(
     DEPENDENCIES
     std_msgs
