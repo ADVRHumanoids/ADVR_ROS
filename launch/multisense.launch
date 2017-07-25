@@ -1,0 +1,21 @@
+<launch>
+
+  <!-- param name="multisense_description" command="$(find xacro)/xacro.py '$(find multisense_sl_description)/urdf/multisense_sl_cpu.urdf'" / -->
+  <param name="multisense_description" command="$(find xacro)/xacro.py '$(find bigman_urdf)/urdf/sensors/multisense_sl_simulation.urdf.xacro'" />
+
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="multisense_sl_robot_state_publisher" output="screen">
+    <remap from="robot_description" to="multisense_description" />
+    <param name="publish_frequency" type="double" value="50.0" />
+    <remap from="joint_states" to="/multisense/joint_states" />
+  </node>
+
+  <!-- TF Buffer Server -->
+  <node pkg="tf2_ros" type="buffer_server" name="tf2_buffer_server" output="screen">
+    <param name="buffer_size" value="1200.0"/>
+  </node>
+
+  <!-- publish transform between neck and head -->
+    <node pkg="tf" type="static_transform_publisher" name="neck_fixed_joint" args="0.08765 0 0.06475 0 0 0 1 /NeckPitch /multisense/head 20" />
+
+  
+</launch>
