@@ -1,0 +1,4 @@
+float64 right_grasp
+float64 left_grasp
+---
+bool success
