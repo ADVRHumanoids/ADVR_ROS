@@ -102,8 +102,9 @@ if( ${catkin_FOUND} )
     FILES
     im_pose_msg.msg
     im_pose_array_msg.msg
+    tactile_sensor.msg
     )
-    
+        
     generate_messages(
     DEPENDENCIES
     std_msgs

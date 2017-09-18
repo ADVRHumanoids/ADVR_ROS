@@ -1,5 +1,5 @@
 <package format="2">
-  <name>ADVR ROS</name>
+  <name>ADVR_ROS</name>
   <version>1.0.0</version>
   <description>
   This package provides ADVR ROS capability.
