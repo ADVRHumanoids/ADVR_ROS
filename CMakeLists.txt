@@ -96,6 +96,12 @@ if( ${catkin_FOUND} )
     FILES
     advr_grasp_control_srv.srv
     )
+    
+    add_service_files(
+    DIRECTORY srv
+    FILES
+    advr_locomotion.srv
+    )
 
     add_message_files(
     DIRECTORY msgs

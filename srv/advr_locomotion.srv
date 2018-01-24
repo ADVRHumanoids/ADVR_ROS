@@ -1,0 +1,5 @@
+string command_type
+float64 command_value
+float64 step_length
+---
+bool success
