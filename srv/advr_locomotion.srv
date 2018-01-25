@@ -1,5 +1,6 @@
 int64 command_type
 float64 command_value
 float64 step_length
+char execute
 ---
 bool success
