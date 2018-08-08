@@ -118,6 +118,8 @@ if( ${catkin_FOUND} )
     trajectory_utils
     )
 
+catkin_package()
+
 
 
 endif()
